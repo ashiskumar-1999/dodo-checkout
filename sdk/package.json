@@ -1,0 +1,18 @@
+{
+  "name": "dodo-checkout-sdk",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Embeddable browser SDK for Dodo Checkout",
+  "main": "dist/dodo-checkout.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit && esbuild index.ts --bundle --format=iife --platform=browser --target=es2017 --outfile=dist/dodo-checkout.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.0.0"
+  }
+}

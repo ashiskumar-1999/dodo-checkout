@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+@keyframes checkout-dialog-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes checkout-state-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.checkout-dialog {
+  animation: checkout-dialog-in 180ms ease-out both;
+}
+
+.checkout-state {
+  animation: checkout-state-in 180ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .checkout-dialog,
+  .checkout-state {
+    animation: none;
+  }
+}
