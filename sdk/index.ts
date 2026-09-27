@@ -39,7 +39,7 @@ interface Window {
 
 declare const DodoCheckout: CheckoutApi;
 
-const DEFAULT_CHECKOUT_URL = "http://localhost:3000";
+const DEFAULT_CHECKOUT_URL = "https://checkout-sandy-ten.vercel.app/";
 const CLOSE_REASONS: CheckoutCloseReason[] = [
   "user",
   "escape",
