@@ -18,7 +18,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${roboto.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <Script src="/dodo-checkout.js" strategy="beforeInteractive" />
+        <Script
+          src="https://dodo-sdk.vercel.app/dodo-checkout.js"
+          strategy="beforeInteractive"
+        />
         {children}
       </body>
     </html>
